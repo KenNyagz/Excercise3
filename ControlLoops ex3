@@ -1,0 +1,17 @@
+single_digits = range(10)
+
+squares = []
+
+for digit in single_digits:
+  #print(digit)
+  for digit in single_digits:
+    square = digit * digit 
+    squares.append(square)
+  
+print(squares)
+
+cubes = [digit**3 for digit in single_digits]
+print(cubes)
+
+cubes_and_doubles = [ digit**3 if digit > 5 else digit *2 for digit in single_digits ]
+print (cubes_and_doubles)
